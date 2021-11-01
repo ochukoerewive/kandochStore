@@ -3,11 +3,13 @@ html {
 }
 
 body {
-    background: url('/media/homepagejpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
+    background: url('/media/homepage_background3.JPG') no-repeat fixed;
+    background-size: 100%;
+    
+    color: rgb(0, 0, 0);
     font-family: 'Lato';
+    
+
 }
 
 /* from Bulma */
