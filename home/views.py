@@ -1,6 +1,6 @@
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from .models import Vendor
 # Create your views here.
@@ -21,4 +21,7 @@ def become_vendor(request):
             vendor = Vendor.objects.create(name=user.username, created_by=user)
 
             return redirect('home')
-    return render(request, 'home/become_vendor.html')
+    else:
+        form = UserCreationForm()
+
+    return render(request, 'home/become_vendor.html', {'form': form})

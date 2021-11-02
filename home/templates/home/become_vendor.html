@@ -3,5 +3,21 @@
 {% block title %}Become vendor | {% endblock %}
 
 {% block content %}
+<img src="media/2014-Volvo-V60-R-Design-2_400_thb.jpg" alt="">
+<div></div>
 <h1>become vendor</h1>
+
+<form class="container_testing" action="post" action=".">
+    {% csrf_token %}
+
+    {{ form.as_P }}
+
+    <div class="field">
+        <div class="control">
+            <button class="button is-uppercase">Sign up</button>
+
+        </div>
+    </div>
+</form>
+
 {% endblock %}
