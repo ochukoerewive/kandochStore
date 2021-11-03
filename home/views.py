@@ -31,4 +31,4 @@ def become_vendor(request):
 def vendor_admin(request):
     vendor = request.user.vendor
 
-    return render(request, 'vendor/vendor_admin.html', {'vendor': vendor})
+    return render(request, 'home/vendor_admin.html', {'vendor': vendor})

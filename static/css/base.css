@@ -3,13 +3,13 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background3.JPG') no-repeat fixed;
+    background: url('media/2014-Volvo-V60-R-Design-2_400_thb.jpg') no-repeat center center fixed;
+    background-color: rgb(253, 222, 222);
+    width:100%;
     background-size: 100%;
     color: rgb(0, 0, 0);
     font-family: 'Lato';
-    
-
-}
+   }
 
 /* from Bulma */
 .icon {
@@ -27,6 +27,16 @@ body {
 .main-logo-link {
     width: fit-content;
 }
+
+.container-becomeVendor{
+    width:100%;
+    background-position:center;
+    padding-top:12%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
 
 
 
@@ -61,6 +71,11 @@ body {
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+
+.container-becomeVendor{
+    
+    
 }
 
 /* -------------------------------- Media Queries */
