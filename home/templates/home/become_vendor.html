@@ -3,11 +3,12 @@
 {% block title %}Become vendor | {% endblock %}
 
 {% block content %}
-<img src="media/2014-Volvo-V60-R-Design-2_400_thb.jpg" alt="">
-<div></div>
 <h1>become vendor</h1>
+<img src="media/2014-Volvo-V60-R-Design-2_400_thb.jpg" alt="">
 
-<form class="container_testing" action="post" action=".">
+
+
+<form method="post" action=".">
     {% csrf_token %}
 
     {{ form.as_P }}
